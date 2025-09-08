@@ -25,7 +25,6 @@
     </nav>
   </header>
   <main>
-
     <section class="hero-header flex h-fit justify-center items-center space-x-16 bg-[#CFF0DC]">
       <img src="./assets/hero-leaf1.png" alt="" class="left-hero">
       <div class="hero-contents text-center flex flex-col gap-6 justify-center items-center">
@@ -38,6 +37,39 @@
         <button class="btn py-3 px-5 bg-[#FACC15] text-green-800 rounded-full w-fit">Get Involved</button>
       </div>
       <img src="./assets/hero-leaf2.png" alt="" class="right-hero">
+    </section>
+    <section
+      class="trees py-24 space-y-10 flex flex-col justify-center items-center text-4xl text-[#1F2937] font-semibold  bg-[#f0fdf4]">
+      <h2 class="tree-heading">Choose Your Trees</h2>
+      <div class="tree-service grid md:grid-cols-[250px_1090px_250px]  gap-x-8 ">
+        <div class="tree-categories  outline-4 outline-black">
+          <h3 class="categories-heading text-2xl text-[#1F2937] font-semibold mb-4">Categories</h3>
+          <div id="category" class="cat-btns flex flex-col items-start ">
+            <button
+              class="category-btn py-2 px-3 bg-[#15803D] text-base font-medium w-full rounded-[4px] h-full text-white text-start hover:bg-[#CFF0DC] hover:text-black">buttons-n</button>
+
+          </div>
+        </div>
+        <div id="card-preview" class="tree-cards outline-4 outline-yellow-600 grid md:grid-cols-3 gap-7">
+
+          <div class="card p-4 flex flex-col gap-3 bg-white rounded-lg">
+            <img src="./assets/about.png" alt="" class="max-h-[186px] w-full bg-gray-400 rounded-lg">
+            <h5 class="font-semibold text-sm text-[#1F2937]">Mango Tree</h5>
+            <p class="text-[#1f2937a1] text-xs">A fast-growing tropical tree that produces delicious, juicy mangoes
+              during
+              summer. Its dense green</p>
+            <div class="cat-price flex justify-between">
+              <div class="category-name text-sm bg-[#DCFCE7] text-green-800 rounded-full py-1 px-3">Fruit Tree</div>
+              <div class="price font-bold text-base">৳500</div>
+
+            </div>
+            <button class=" px-5 py-3 rounded-full text-base text-white bg-[#15803D]">Add to Cart</button>
+          </div>
+
+        </div>
+        <div id="cart-preview" class="tree-cart  outline-4 outline-red-600"></div>
+      </div>
+
     </section>
 
   </main>
