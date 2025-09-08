@@ -53,7 +53,8 @@
         <div id="card-preview" class="tree-cards outline-4 outline-yellow-600 grid md:grid-cols-3 gap-7">
 
           <div class="card p-4 flex flex-col gap-3 bg-white rounded-lg">
-            <img src="./assets/about.png" alt="" class="max-h-[186px] w-full bg-gray-400 rounded-lg">
+            <img src="./assets/about.png" alt=""
+              class="h-full w-full object-fill max-h-[186px]  bg-gray-400 rounded-lg">
             <h5 class="font-semibold text-sm text-[#1F2937]">Mango Tree</h5>
             <p class="text-[#1f2937a1] text-xs">A fast-growing tropical tree that produces delicious, juicy mangoes
               during
@@ -104,12 +105,49 @@
         </div>
       </div>
     </section>
+    <section class="our-impact py-24 bg-[#CFF0DC] flex flex-col gap-y-8 justify-center  items-center">
+      <h2 class="text-4xl font-semibold text-[#1F2937]">Our Impact</h2>
 
+      <div class="impact-cards  flex  gap-12">
+        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+          <h6 class="text-3xl font-semibold text-green-800">500K+</h6>
+          <span class="text-sm text-gray-500">Trees Planted</span>
+        </div>
+        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+          <h6 class="text-3xl font-semibold text-green-800">120+</h6>
+          <span class="text-sm text-gray-500">Communities Involved</span>
+        </div>
+        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+          <h6 class="text-3xl font-semibold text-green-800">30+</h6>
+          <span class="text-sm text-gray-500">Countries Reached</span>
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
   <footer>
+    <div class="footer-upper bg-green-800">
+      <h2 class="text-4xl font-semibold text-white">Plant a Tree Today</h2>
+      <form action="">
+        <input type="text" name="" id="" placeholder="Your name">
+        <input type="email" name="" id="" placeholder="Your email">
+        <label for="Number of Trees">Number of Trees</label>
+        <select name="role" class="select select-bordered w-full">
+          <option selected>Number of Trees</option>
+          <option>1 Tree - $5</option>
+          <option>5 Tree - $25</option>
+          <option>10 Tree - $50</option>
+        </select>
+        <button type="submit"
+          class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] border-none shadow-none hover:shadow-none w-full mt-2">
+          Donate Now
+        </button>
+      </form>
 
+    </div>
+    <div class="footer-lower"></div>
   </footer>
 
 </body>
