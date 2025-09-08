@@ -127,27 +127,31 @@
 
   </main>
 
-  <footer>
-    <div class="footer-upper bg-green-800">
-      <h2 class="text-4xl font-semibold text-white">Plant a Tree Today</h2>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Your name">
-        <input type="email" name="" id="" placeholder="Your email">
-        <label for="Number of Trees">Number of Trees</label>
-        <select name="role" class="select select-bordered w-full">
+  <footer class="">
+    <div class="footer-upper bg-green-800 flex flex-col place-items-center py-[100px]">
+      <h2 class="text-4xl font-semibold text-white mb-8">Plant a Tree Today</h2>
+      <form action="" class=" bg-[#15803D] space-y-4 max-w-[650px] p-10 rounded-xl">
+        <input type="text" name="" id="" placeholder="Your name"
+          class="input input-bordered w-full bg-white py-3 px-4 rounded">
+        <input type="email" name="" id="" placeholder="Your email"
+          class="input input-bordered w-full bg-white py-3 px-4 rounded">
+
+        <select name="role" class="select select-bordered w-full bg-white py-3 px-4 rounded ">
           <option selected>Number of Trees</option>
           <option>1 Tree - $5</option>
           <option>5 Tree - $25</option>
           <option>10 Tree - $50</option>
         </select>
         <button type="submit"
-          class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] border-none shadow-none hover:shadow-none w-full mt-2">
+          class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] border-none shadow-none hover:shadow-none w-full mt-2 py-3 px-4">
           Donate Now
         </button>
       </form>
 
     </div>
-    <div class="footer-lower"></div>
+    <div class="footer-lower text-center bg-green-900 py-6">
+      <p class="text-white ">© 2025 Green Earth. All Rights Reserved.</p>
+    </div>
   </footer>
 
 </body>
