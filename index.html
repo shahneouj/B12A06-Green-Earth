@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="relative">
   <header>
     <nav class=" flex justify-between items-center bg-[#15803D] py-6 px-36 text-white">
       <div class="logo font-extrabold text-2xl">Green Earth</div>
@@ -39,49 +39,31 @@
       <img src="./assets/hero-leaf2.png" alt="" class="right-hero">
     </section>
     <section
-      class="trees py-24 space-y-10 flex flex-col justify-center items-center text-4xl text-[#1F2937] font-semibold  bg-[#f0fdf4]">
+      class="trees py-24 space-y-10 flex flex-col justify-center items-center text-4xl text-[#1F2937] font-semibold  bg-[#f0fdf4] ">
+
       <h2 class="tree-heading">Choose Your Trees</h2>
-      <div class="tree-service grid md:grid-cols-[250px_1090px_250px]  gap-x-8 ">
-        <div class="tree-categories  outline-4 outline-black">
+      <div class="tree-service grid grid-cols-1 sm:grid-cols-[250px_1090px_250px]   gap-x-8 ">
+        <div class="tree-categories h-fit sm:h-[600px]">
           <h3 class="categories-heading text-2xl text-[#1F2937] font-semibold mb-4">Categories</h3>
-          <div id="category" class="cat-btns flex flex-col items-start ">
+          <div id="category" class="cat-btns flex flex-col items-start  ">
             <button
-              class="category-btn py-2 px-3 bg-[#15803D] text-base font-medium w-full rounded-[4px] h-full text-white text-start hover:bg-[#CFF0DC] hover:text-black">buttons-n</button>
+              class="category-btn py-2 px-3 bg-[#15803D] text-base font-medium w-full rounded-[4px] h-full text-white text-start hover:bg-[#CFF0DC] hover:text-black"
+              onclick="allDataFetch()">All
+              Trees</button>
 
           </div>
         </div>
-        <div id="card-preview" class="tree-cards outline-4 outline-yellow-600 grid md:grid-cols-3 gap-7">
+        <div id="card-preview" class="tree-cards grid md:grid-cols-3 auto-rows-[400px] gap-7">
 
-          <div class="card p-4 flex flex-col gap-3 bg-white rounded-lg">
-            <img src="./assets/about.png" alt=""
-              class="h-full w-full object-fill max-h-[186px]  bg-gray-400 rounded-lg">
-            <h5 class="font-semibold text-sm text-[#1F2937]">Mango Tree</h5>
-            <p class="text-[#1f2937a1] text-xs">A fast-growing tropical tree that produces delicious, juicy mangoes
-              during
-              summer. Its dense green</p>
-            <div class="cat-price flex justify-between">
-              <div class="category-name text-sm bg-[#DCFCE7] text-green-800 rounded-full py-1 px-3">Fruit Tree</div>
-              <div class="price font-bold text-base">৳500</div>
-
-            </div>
-            <button class=" px-5 py-3 rounded-full text-base text-white bg-[#15803D]">Add to Cart</button>
-          </div>
 
         </div>
-        <div id="cart-preview" class="tree-cart  outline-4 outline-red-600 p-4 bg-white">
+        <div id="cart-preview" class="tree-cart   p-4 bg-white h-fit sm:min-h-[600px]">
           <h5 class="text-xl mb-2">Your Cart</h5>
           <div class="cart-items space-y-2">
-            <div class="cart-item flex justify-between items-center px-3 py-2 bg-[#F0FDF4]">
-              <div class="info">
-                <h6 class="text-sm font-bold text-[#1f2937]">Mango Tree</h6>
-                <span class="text-base text-[#1f293783]">৳500 x 1</span>
-              </div>
-              <i class="w-[16px] h-[16px] text-base text-[#1f293783]">×</i>
-            </div>
           </div>
-          <div class="total flex justify-between border-t-[1px] mt-1 border-[#1f293772]">
+          <div class="total  justify-between border-t-[1px] mt-1 border-[#1f293772] hidden">
             <h6 class="text-base text-[#1f2937] font-semibold">Total:</h6>
-            <span class="text-base text-[#1f2937] ">৳1000</span>
+            <span class="text-base text-[#1f2937] ">৳<span>1000</span></span>
           </div>
         </div>
       </div>
@@ -124,10 +106,9 @@
       </div>
 
     </section>
-
   </main>
 
-  <footer class="">
+  <footer>
     <div class="footer-upper bg-green-800 flex flex-col place-items-center py-[100px]">
       <h2 class="text-4xl font-semibold text-white mb-8">Plant a Tree Today</h2>
       <form action="" class=" bg-[#15803D] space-y-4 max-w-[650px] p-10 rounded-xl">
@@ -153,7 +134,11 @@
       <p class="text-white ">© 2025 Green Earth. All Rights Reserved.</p>
     </div>
   </footer>
+  <div id="popup"
+    class=" hidden inset-0  fixed w-screen h-full place-content-center z-[9999]  place-items-center  bg-[#33353430] ">
 
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
