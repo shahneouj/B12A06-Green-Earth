@@ -44,7 +44,7 @@ const card = (infos, cardId = '#card-preview') => {
 <div class="card p-4 flex flex-col gap-3 bg-white rounded-lg  items-stretch h-full">
             <img src="${image}" alt=""
               class="h-full w-full object-fit max-h-[186px]  bg-gray-400 rounded-lg">
-            <h5 class="font-semibold text-sm text-[#1F2937]" onclick="plantDetails(${id})">${name}</h5>
+            <h5 class="font-semibold text-sm text-[#1F2937] cursor-pointer" onclick="plantDetails(${id})">${name}</h5>
             <p class="text-[#1f2937a1] text-xs flex-grow">${description}</p>
             <div class="cat-price flex justify-between">
               <div class="category-name text-sm bg-[#DCFCE7] text-green-800 rounded-full py-1 px-3">${category}</div>
