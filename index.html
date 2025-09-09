@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Earth</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/hero-leaf1.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
@@ -14,19 +15,25 @@
 
 <body class="relative">
   <header>
-    <nav class=" flex justify-between items-center bg-[#15803D] py-6 px-36 text-white">
-      <div class="logo font-extrabold text-2xl">Green Earth</div>
-      <ul class="w-max flex  gap-6 font-bold">
+    <nav class=" flex justify-between items-center bg-[#15803D] py-6 px-6 sm:px-36 text-white">
+      <div class="burger-nav flex flex-col gap-y-1">
+        <span class="w-4 h-1 bg-white block"></span>
+        <span class="w-6 h-1 bg-white block"></span>
+        <span class="w-8 h-1 bg-white block"></span>
+      </div>
+      <div class="logo font-extrabold text-xl sm:text-2xl">Green Earth</div>
+      <ul class="w-max hidden sm:flex  gap-6 font-bold">
         <li>About</li>
         <li>Gallery</li>
         <li>Plant a Tree</li>
       </ul>
-      <button class="btn py-3 px-5 bg-[#FACC15] text-green-800 rounded-full">Plant a Tree</button>
+      <button class="btn py-3 px-5 bg-[#FACC15] text-green-800 rounded-full text-xs sm:text-base">Plant a Tree</button>
     </nav>
   </header>
   <main>
-    <section class="hero-header flex h-fit justify-center items-center space-x-16 bg-[#CFF0DC]">
-      <img src="./assets/hero-leaf1.png" alt="" class="left-hero">
+    <section
+      class="hero-header flex w-screen h-fit justify-center items-center py-10 sm:space-x-16 bg-[#CFF0DC] sm:py-0">
+      <img src="./assets/hero-leaf1.png" alt="" class="left-hero hidden sm:block">
       <div class="hero-contents text-center flex flex-col gap-6 justify-center items-center">
         <h1 class="hero-heading text-5xl font-bold text-[#1F2937]">Plant a Tree, Grow a Future</h1>
         <p class="hero-description text-[#1f2937a1] text-base">Join our mission to plant 1 million trees and make the
@@ -36,7 +43,7 @@
           generations.</p>
         <button class="btn py-3 px-5 bg-[#FACC15] text-green-800 rounded-full w-fit">Get Involved</button>
       </div>
-      <img src="./assets/hero-leaf2.png" alt="" class="right-hero">
+      <img src="./assets/hero-leaf2.png" alt="" class="right-hero hidden sm:block">
     </section>
     <section
       class="trees py-24 space-y-10 flex flex-col justify-center items-center text-4xl text-[#1F2937] font-semibold  bg-[#f0fdf4] ">
@@ -53,11 +60,11 @@
 
           </div>
         </div>
-        <div id="card-preview" class="tree-cards grid md:grid-cols-3 auto-rows-[400px] gap-7">
+        <div id="card-preview" class="tree-cards mt-5 grid md:grid-cols-3 auto-rows-[400px] gap-7">
 
 
         </div>
-        <div id="cart-preview" class="tree-cart   p-4 bg-white h-fit sm:min-h-[600px]">
+        <div id="cart-preview" class="tree-cart mt-5  p-4 bg-white h-fit sm:min-h-[600px]">
           <h5 class="text-xl mb-2">Your Cart</h5>
           <div class="cart-items space-y-2">
           </div>
@@ -72,8 +79,8 @@
     <section class="about py-20 flex flex-col justify-center items-center gap-10 bg-[#f0fdf4]">
       <h2 class=" text-4xl font-semibold text-[#1F2937]">About the Campaign</h2>
 
-      <div class="about-details  flex justify-center items-center w-[1090px] gap-x-[30px]">
-        <img src="./assets/about.png" alt="" class="md:size-[530px]">
+      <div class="about-details  sm:flex gap-y-10 flex-col justify-center items-center sm:w-[1090px] sm:gap-x-[30px]">
+        <img src="./assets/about.png" alt="" class="md:size-[530px] sm:mb-0 mb-5">
         <div class="details-text space-y-5">
           <p class="text-[#1f2937a7] ">Green Earth is a global tree plantation initiative dedicated to fighting climate
             change. Since our start,
@@ -90,16 +97,16 @@
     <section class="our-impact py-24 bg-[#CFF0DC] flex flex-col gap-y-8 justify-center  items-center">
       <h2 class="text-4xl font-semibold text-[#1F2937]">Our Impact</h2>
 
-      <div class="impact-cards  flex  gap-12">
-        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+      <div class="impact-cards  sm:flex flex-col space-y-3 gap-12">
+        <div class="impact-card p-10 bg-white rounded-md w-full  sm:w-[516px] flex flex-col place-items-center">
           <h6 class="text-3xl font-semibold text-green-800">500K+</h6>
           <span class="text-sm text-gray-500">Trees Planted</span>
         </div>
-        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+        <div class="impact-card p-10 bg-white rounded-md w-full md:w-[516px] flex flex-col place-items-center">
           <h6 class="text-3xl font-semibold text-green-800">120+</h6>
           <span class="text-sm text-gray-500">Communities Involved</span>
         </div>
-        <div class="impact-card p-10 bg-white rounded-md md:w-[516px] flex flex-col place-items-center">
+        <div class="impact-card p-10 bg-white rounded-md w-full md:w-[516px] flex flex-col place-items-center">
           <h6 class="text-3xl font-semibold text-green-800">30+</h6>
           <span class="text-sm text-gray-500">Countries Reached</span>
         </div>
@@ -109,7 +116,7 @@
   </main>
 
   <footer>
-    <div class="footer-upper bg-green-800 flex flex-col place-items-center py-[100px]">
+    <div class="footer-upper bg-green-800 flex flex-col place-items-center px-5  py-[100px]">
       <h2 class="text-4xl font-semibold text-white mb-8">Plant a Tree Today</h2>
       <form action="" class=" bg-[#15803D] space-y-4 max-w-[650px] p-10 rounded-xl">
         <input type="text" name="" id="" placeholder="Your name"
@@ -137,6 +144,13 @@
   <div id="popup"
     class=" hidden inset-0  fixed w-screen h-full place-content-center z-[9999]  place-items-center  bg-[#33353430] ">
 
+  </div>
+  <div class="nav-tool fixed top-22 left-5 hidden ">
+    <ul class=" flex-col justify-start gap-9 text-sm rounded-lg z-1 bg-white w-52 p-2 shadow">
+      <li class="hover:bg-gray-100">About</li>
+      <li class="hover:bg-gray-100">Gallery</li>
+      <li class="hover:bg-gray-100">Plant a Tree</li>
+    </ul>
   </div>
   <script src="./script.js"></script>
 </body>

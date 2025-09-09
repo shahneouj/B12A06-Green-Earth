@@ -153,3 +153,22 @@ const popup = (e) => {
     })
   })
 }
+
+//nav bar
+const navBar = () => {
+  const burgerNav = document.querySelector('.burger-nav');
+  const navTool = document.querySelector('.nav-tool');
+
+  burgerNav.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent click bubbling
+    navTool.classList.remove('hidden');
+  });
+
+  // close navTool if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navTool.contains(e.target) && !burgerNav.contains(e.target)) {
+      navTool.classList.add('hidden');
+    }
+  });
+}
+navBar();
