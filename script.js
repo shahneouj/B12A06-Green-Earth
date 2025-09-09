@@ -126,14 +126,13 @@ const removeCart = () => {
   showTotal();
 }
 //details popup
-
 const popup = (e) => {
   const popupContent = document.querySelector('#popup');
 
   popupContent.innerHTML = `<div class="card z-[9999] p-4 flex flex-col gap-3 bg-white rounded-lg w-[350px]">
   <h5 class="font-semibold text-sm text-[#1F2937]">${e.name}</h5>
             <img src="${e.image}" alt=""
-              class="h-full w-full object-fit max-h-[186px]  bg-gray-400 rounded-lg">
+              class="h-full w-full object-cover max-h-[186px]  bg-gray-400 rounded-lg">
             <div class="category-name text-base "><strong class="text-base">Category:</strong>${e.category}</div>
               <div class="price font-bold text-base">Price:<span class="font-normal">৳${e.price}</span></div>
                <p class="text-[#1f2937a1] text-xs"><strong class="text-black text-base">Description:</strong>${e.description}</p>
