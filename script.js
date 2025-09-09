@@ -50,7 +50,7 @@ const card = (infos, cardId = '#card-preview') => {
               <div class="category-name text-sm bg-[#DCFCE7] text-green-800 rounded-full py-1 px-3">${category}</div>
               <div class="price font-bold text-base">৳${price}</div>
             </div>
-            <button class=" px-5 py-3 rounded-full text-base text-white bg-[#15803D]" onclick="addCart('${name}', ${price})">Add to Cart</button>
+            <button class=" px-5 py-3 rounded-full text-base text-white bg-[#15803D] cursor-pointer" onclick="addCart('${name}', ${price})">Add to Cart</button>
           </div>
 
 `

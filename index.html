@@ -49,6 +49,7 @@
       class="trees py-24 space-y-10 flex flex-col justify-center items-center text-4xl text-[#1F2937] font-semibold  bg-[#f0fdf4] ">
 
       <h2 class="tree-heading">Choose Your Trees</h2>
+
       <div class="tree-service grid grid-cols-1 sm:grid-cols-[250px_1090px_250px]   gap-x-8 ">
         <div class="tree-categories h-fit sm:h-[600px]">
           <h3 class="categories-heading text-2xl text-[#1F2937] font-semibold mb-4">Categories</h3>
@@ -60,9 +61,10 @@
 
           </div>
         </div>
-        <div id="card-preview" class="tree-cards mt-5 grid md:grid-cols-3 auto-rows-[400px] gap-7">
-          <div class="spinner "></div>
-
+        <div id="card-preview" class="tree-cards mt-5 grid md:grid-cols-3 auto-rows-[400px] gap-7  relative ">
+          <div class="spinner size-10 absolute top-0 left-1/2 -translate-x-1/2 ">
+            <span class=" inline-flex h-full w-full animate-ping rounded-full bg-black opacity-75 "></span>
+          </div>
         </div>
         <div id="cart-preview" class="tree-cart mt-5  p-4 bg-white h-fit sm:min-h-[600px]">
           <h5 class="text-xl mb-2">Your Cart</h5>
@@ -79,10 +81,11 @@
     <section class="about py-20 flex flex-col justify-center items-center gap-10 bg-[#f0fdf4]">
       <h2 class=" text-4xl font-semibold text-[#1F2937]">About the Campaign</h2>
 
-      <div class="about-details  sm:flex gap-y-10 flex-col justify-center items-center sm:w-[1090px] sm:gap-x-[30px]">
-        <img src="./assets/about.png" alt="" class="md:size-[530px] sm:mb-0 mb-5">
+      <div class="about-details flex flex-wrap gap-y-10 grid-co justify-center items-center sm:w-[1090px] gap-x-[30px]">
+        <img src="./assets/about.png" alt="" class="sm:size-[530px] sm:mb-0 mb-5">
         <div class="details-text space-y-5">
-          <p class="text-[#1f2937a7] ">Green Earth is a global tree plantation initiative dedicated to fighting climate
+          <p class="text-[#1f2937a7] sm:max-w-[500px]  ">Green Earth is a global tree plantation initiative dedicated to
+            fighting climate
             change. Since our start,
             we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create
             habitats for wildlife, and combat global warming.</p>
@@ -97,8 +100,8 @@
     <section class="our-impact py-24 bg-[#CFF0DC] flex flex-col gap-y-8 justify-center  items-center">
       <h2 class="text-4xl font-semibold text-[#1F2937]">Our Impact</h2>
 
-      <div class="impact-cards  sm:flex flex-col space-y-3 gap-12">
-        <div class="impact-card p-10 bg-white rounded-md w-full  sm:w-[516px] flex flex-col place-items-center">
+      <div class="impact-cards  flex flex-wrap space-y-3 gap-12">
+        <div class="impact-card p-10 bg-white rounded-md w-full  md:w-[516px] flex flex-col place-items-center">
           <h6 class="text-3xl font-semibold text-green-800">500K+</h6>
           <span class="text-sm text-gray-500">Trees Planted</span>
         </div>
