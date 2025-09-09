@@ -92,7 +92,7 @@ const addCart = (name, price) => {
                 <h6 class="text-sm font-bold text-[#1f2937]">${name}</h6>
                 <span class="text-base text-[#1f293783]">৳<span>${price}</span></span>
                </div>
-               <span class="w-[16px] h-[16px] text-base text-[#1f293783]" onclick="removeCart()">×</span>
+               <span class="w-[16px] h-[16px] text-base text-[#1f293783] cursor-pointer" onclick="removeCart()">×</span>
             </div>
 `
   showTotal();
